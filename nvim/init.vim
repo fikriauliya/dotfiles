@@ -27,6 +27,10 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'edkolev/tmuxline.vim'
+Plug 'tpope/vim-fireplace'
+Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'embear/vim-foldsearch'
 
 call plug#end()
 
@@ -47,6 +51,7 @@ map <C-H> :tabp<CR>
 map <C-L> :tabn<CR>
 map <leader>. :Bclose<cr>
 map <leader>/ :tabclose<cr>
+map <leader><cr> :Eval<cr>
 
 "Yankstack
 nmap <c-p> <Plug>yankstack_substitute_older_paste
@@ -87,8 +92,6 @@ colorscheme molokai
 nmap <c-s> <Plug>(easymotion-s2)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
-map  n <Plug>(easymotion-next)
-map  N <Plug>(easymotion-prev)
 map <Leader>l <Plug>(easymotion-lineforward)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
@@ -101,3 +104,5 @@ try
     set undofile
 catch
 endtry
+
+au VimEnter * RainbowParentheses
