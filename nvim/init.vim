@@ -48,10 +48,10 @@ set cmdheight=1
 
 let g:deoplete#enable_at_startup = 1
 
-map <C-J> :bnext<CR>
-map <C-K> :bprev<CR>
-map <C-H> :tabp<CR>
-map <C-L> :tabn<CR>
+"map <C-J> :bnext<CR>
+"map <C-K> :bprev<CR>
+"map <C-H> :tabp<CR>
+"map <C-L> :tabn<CR>
 map <leader>. :Bclose<cr>
 map <leader>/ :tabclose<cr>
 map <leader><cr> :Eval<cr>
