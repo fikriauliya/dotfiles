@@ -103,6 +103,9 @@ catch
 endtry
 
 au VimEnter * RainbowParentheses
+"Ag
+nnoremap \ :Ag<SPACE>
+
 "Vimux
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
