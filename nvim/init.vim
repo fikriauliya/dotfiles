@@ -102,7 +102,9 @@ try
 catch
 endtry
 
+"Rainbow
 au VimEnter * RainbowParentheses
+
 "Ag
 nnoremap \ :Ag<SPACE>
 
