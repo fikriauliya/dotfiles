@@ -56,6 +56,8 @@ map <leader>. :Bclose<cr>
 map <leader>q :q<cr>
 map <leader>/ :tabclose<cr>
 map <leader><cr> :Eval<cr>
+map <leader>j :bnext<cr>
+map <leader>k :bprev<cr>
 
 "Yankstack
 nmap <c-p> <Plug>yankstack_substitute_older_paste
