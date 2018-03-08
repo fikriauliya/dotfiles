@@ -32,6 +32,7 @@ Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'embear/vim-foldsearch'
 Plug 'kshenoy/vim-signature'
+Plug 'schickling/vim-bufonly'
 
 call plug#end()
 
