@@ -53,6 +53,7 @@ let g:deoplete#enable_at_startup = 1
 "map <C-H> :tabp<CR>
 "map <C-L> :tabn<CR>
 map <leader>. :Bclose<cr>
+map <leader>q :q<cr>
 map <leader>/ :tabclose<cr>
 map <leader><cr> :Eval<cr>
 
