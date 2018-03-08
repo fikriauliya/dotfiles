@@ -33,6 +33,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'embear/vim-foldsearch'
 Plug 'kshenoy/vim-signature'
 Plug 'schickling/vim-bufonly'
+Plug 'benmills/vimux'
 
 call plug#end()
 
@@ -108,3 +109,8 @@ catch
 endtry
 
 au VimEnter * RainbowParentheses
+"Vimux
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vs :VimuxInterruptRunner<CR>
+map <Leader>vz :VimuxZoomRunner<CR>
