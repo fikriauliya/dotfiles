@@ -31,6 +31,7 @@ Plug 'tpope/vim-fireplace'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'embear/vim-foldsearch'
+Plug 'kshenoy/vim-signature'
 
 call plug#end()
 
