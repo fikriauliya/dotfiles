@@ -68,6 +68,7 @@ map <leader>m :Marks<cr>
 map <leader>g :Goyo<cr>
 nnoremap <C-b> :Buffers<cr>
 nnoremap <C-f> :GFiles<cr>
+nnoremap <C-f>f :Files<cr>
 
 "vim-airline
 let g:airline#extensions#tabline#enabled = 1
