@@ -34,6 +34,9 @@ Plug 'embear/vim-foldsearch'
 Plug 'kshenoy/vim-signature'
 Plug 'schickling/vim-bufonly'
 Plug 'benmills/vimux'
+Plug 'tpope/vim-commentary'
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'juanchanco/vim-jbuilder'
 
 call plug#end()
 
@@ -114,6 +117,6 @@ nnoremap \ :Ag<SPACE>
 
 "Vimux
 map <Leader>vp :VimuxPromptCommand<CR>
-map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vv :VimuxRunLastCommand<CR>
 map <Leader>vs :VimuxInterruptRunner<CR>
 map <Leader>vz :VimuxZoomRunner<CR>
