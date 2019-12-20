@@ -10,12 +10,15 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'tpope/vim-sensible'
 Plug 'chrisbra/NrrwRgn'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'stamblerre/gocode'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive'
-Plug 'majutsushi/tagbar'
+Plug 'airblade/vim-gitgutter'
+" Plug 'majutsushi/tagbar'
+Plug 'liuchengxu/vista.vim'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'tomasr/molokai'
 Plug 'junegunn/goyo.vim'
@@ -23,7 +26,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'maxbrunsfeld/vim-yankstack'
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'edkolev/tmuxline.vim'
@@ -35,8 +38,18 @@ Plug 'kshenoy/vim-signature'
 Plug 'schickling/vim-bufonly'
 Plug 'benmills/vimux'
 Plug 'tpope/vim-commentary'
-Plug 'dart-lang/dart-vim-plugin'
-Plug 'juanchanco/vim-jbuilder'
+" Plug 'dart-lang/dart-vim-plugin'
+" Plug 'juanchanco/vim-jbuilder'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'konfekt/fastfold'
+" Plug 'reasonml-editor/vim-reason-plus'
+" Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+Plug 'tpope/vim-dadbod'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'shougo/denite.nvim'
+" Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'diepm/vim-rest-console'
 
 call plug#end()
 
@@ -72,6 +85,7 @@ map <leader>tt :TagbarToggle<cr>
 "fzf
 map <leader>m :Marks<cr>
 map <leader>g :Goyo<cr>
+nnoremap <leader><Space> :GoDef<cr>
 nnoremap <C-b> :Buffers<cr>
 nnoremap <C-f> :GFiles<cr>
 nnoremap <C-f>f :Files<cr>
@@ -120,3 +134,9 @@ map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vv :VimuxRunLastCommand<CR>
 map <Leader>vs :VimuxInterruptRunner<CR>
 map <Leader>vz :VimuxZoomRunner<CR>
+
+source ~/.config/nvim/coc.vim
+
+"Vista
+let g:vista_default_executive = 'coc'
+nmap <silent> <leader>b :Vista!!<CR>
